@@ -3,7 +3,28 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+
+parts:
+  - caption: Introduction
+    chapters:
+      - file: chapters/lecture_1/intro.md
+
+  - caption: Linear Models
+    chapters:
+      - file: chapters/lecture_2/regression.md
+      - file: chapters/lecture_2/classification.md
+
+  - caption: MLP (Multi-layer perceptron)
+    chapters:
+      - file: chapters/lecture_3/mlp.md
+      - file: chapters/lecture_3/bn.md
+      - file: chapters/lecture_3/dropout.md
+
+  - caption: L4
+    chapters:
+      - file: chapters/lecture_4/bp.md
+      - file: chapters/lecture_4/learning_rate.md
+      - file: chapters/lecture_4/weights_analysis.md
+
+
+
